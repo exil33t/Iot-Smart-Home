@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row mt-4">
+    <h4 class="col-lg-12">Arduino nodes</h4>
+      <div *ngFor='let node of firebase.getNodes() | async' class="col-lg-4">
+        <div class="node">
+          <div>
+            <h5  class="remove linklike">Device id: {{node.data.deviceId}}</h5>
+            <span class="mr-auto">Location: {{node.data.location}}</span>
+            <br><span class="mr-auto">Created at: {{dateFromTimestamp(node.data.timestamp)}}</span>
+            <!--<br><span class="mr-auto">Last active at: {{(firebase.nodeLastActive(node.id) | async)?.timestamp}}</span>-->
+
+          </div>
+        </div>
+
+      </div>
+  </div>
+  <i [routerLink]="['/nodes/add']" class="mt-4 plus-sign fa-3x fa fa-plus" aria-hidden="true"></i>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="mt-4 container">
+  <h2>Reports</h2>
+
+  <div class="row">
+    <div *ngFor='let state of nodes | async' class="col-lg-7 report">
+      <strong>Reported from: {{state.deviceId}}</strong> <i>at: {{dateFromTimestamp(state.reportedAt)}}</i><br>
+      <span>Temperature: {{state.temperature}}</span><br>
+      <span>Brightness: {{state.brightness}}</span><br>
+      <span>Humidity: {{state.humidity}}</span><br>
+    </div>
+  </div>
+</div>
+

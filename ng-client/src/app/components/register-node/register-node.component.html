@@ -1,0 +1,18 @@
+<div class="container">
+  <h4 class="mt-4">Register node</h4>
+  <div class="col-lg-6 mt-5">
+    <form>
+      <div class="form-group">
+        <label >Node Id</label>
+        <input [(ngModel)]="deviceId" class="form-control" name="id">
+      </div>
+      <div class="form-group">
+        <label >Location</label>
+        <input [(ngModel)]="location" class="form-control" name="loc">
+      </div>
+
+      <button  (click)="registerNode()" type="submit" class="btn btn-default">Add node</button>
+    </form>
+    <h6>{{formText}}</h6>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.node{
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+
+.linklike{
+  color: dodgerblue !important;
+
+}
+
+.linklike:hover{
+  text-decoration: underline;
+  cursor: default;
+}
+
+
+.plus-sign{
+  font-size: 30px;
+}

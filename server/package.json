@@ -1,0 +1,28 @@
+{
+  "name": "iot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/firestore": "^0.11.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.2",
+    "firebase-admin": "^5.7.0",
+    "mongoose": "^4.13.9",
+    "socket.io": "^2.0.4",
+    "ws": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.10"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^3.0.3"
+  }
+}
